@@ -2,7 +2,7 @@
 
 **QuadFix Lite** is a free, open-source add-on for **Blender 4.2 LTS, 4.5 LTS and 5.x**. It turns triangles and curved n-gons into quads, cleans up meshes after **Boolean cuts** and **imports** (STL, OBJ, FBX, CAD, 3D scans, AI-generated meshes) and shows you exactly which faces are still not quads. Three buttons, no settings to learn, works on a selection or on the whole mesh.
 
-[**Download the latest release**](https://github.com/quadfix-tools/quadfix-lite/releases/latest) | Blender 4.2+ | GPL-3.0-or-later | Windows, macOS, Linux (pure Python, no dependencies)
+[**Download the latest release**](https://github.com/quadfix-tools/quadfix-lite/releases/latest) | Blender 4.2+ | GPL-3.0-or-later | pure Python, no dependencies (tested on macOS; should work on Windows and Linux, reports welcome)
 
 ![Blender scan mesh with triangles converted to quads by QuadFix Lite: before in red, after mostly quads](docs/scan_to_quads.jpg)
 *Triangulated scan-like mesh: before (all red = non-quads) and after N-gons to Quads. Red faces in the result are the ones that are still not quads.*
@@ -63,7 +63,7 @@ No. QuadFix Lite does not fill holes: closing a hole with a proper quad grid is 
 No. It repairs the mesh you have and does not rebuild edge flow. On dense scans some triangles will remain. For automatic retopology use a remesher such as Quad Remesher, QRemeshify or Blender's own Quadriflow.
 
 ### Does it work with Blender 5.x?
-Yes. The test suite (38 checks on Boolean, scan, AI-like and attributed meshes, with vertex, edge and face select modes, partial selections and undo) passes on **Blender 4.2.23, 4.5.14 and 5.2.2**. UVs, vertex groups and colour attributes are preserved.
+Yes. The test suite (38 checks on Boolean, scan, AI-like and attributed meshes, with vertex, edge and face select modes, partial selections and undo) passes on **Blender 4.2.23, 4.5.14 and 5.2.2**. The suite also checks that UV maps, vertex groups and colour attributes are still there afterwards.
 
 ### Does it phone home or need extra libraries?
 No. Pure Python with Blender's own `bmesh`, no internet access, no dependencies.
