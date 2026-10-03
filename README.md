@@ -4,6 +4,8 @@
 
 [**Download the latest release**](https://github.com/quadfix-tools/quadfix-lite/releases/latest) | Blender 4.2+ | GPL-3.0-or-later | pure Python, no dependencies (tested on macOS; should work on Windows and Linux, reports welcome)
 
+> **Get the full version:** [QuadFix on Gumroad](https://quadfix.gumroad.com/l/quadfix) adds **Fill Holes with Quads** (closes holes with a proper quad grid, no triangle fans). Lite stays free and complete for everything listed below.
+
 ![Blender scan mesh with triangles converted to quads by QuadFix Lite: before in red, after mostly quads](docs/scan_to_quads.jpg)
 *Triangulated scan-like mesh: before (all red = non-quads) and after N-gons to Quads. Red faces in the result are the ones that are still not quads.*
 
