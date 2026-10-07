@@ -4,7 +4,7 @@
 
 [**Download the latest release**](https://github.com/quadfix-tools/quadfix-lite/releases/latest) | Blender 4.2+ | GPL-3.0-or-later | pure Python, no dependencies (tested on macOS; should work on Windows and Linux, reports welcome)
 
-> **Get the full version:** [QuadFix on Gumroad](https://quadfix.gumroad.com/l/quadfix) adds **Fill Holes with Quads** (closes holes with a proper quad grid, no triangle fans). Lite stays free and complete for everything listed below.
+> **Get the full version:** QuadFix on [Superhive](https://superhivemarket.com/products/quadfix) or [Gumroad](https://quadfix.gumroad.com/l/quadfix) adds **Fill Holes with Quads** (closes holes with a proper quad grid, no triangle fans). Lite stays free and complete for everything listed below.
 
 ![Blender scan mesh with triangles converted to quads by QuadFix Lite: before in red, after mostly quads](docs/scan_to_quads.jpg)
 *Triangulated scan-like mesh: before (all red = non-quads) and after N-gons to Quads. Red faces in the result are the ones that are still not quads.*
@@ -59,7 +59,7 @@ Merge by Distance, Limited Dissolve with a few degrees of angle, then Tris to Qu
 **Select > Select All by Trait > Faces by Sides** finds faces with more than 4 vertices. **Select Non-Quads & Holes** finds all triangles and n-gons and the open boundary edges in one click.
 
 ### Does it fill holes?
-No. QuadFix Lite does not fill holes: closing a hole with a proper quad grid is a separate, harder problem. That is what the full [QuadFix](https://quadfix.gumroad.com/l/quadfix) add-on (paid) does. Lite stays free and complete for what it lists here.
+No. QuadFix Lite does not fill holes: closing a hole with a proper quad grid is a separate, harder problem. That is what the full QuadFix add-on (paid, on [Superhive](https://superhivemarket.com/products/quadfix) and [Gumroad](https://quadfix.gumroad.com/l/quadfix)) does. Lite stays free and complete for what it lists here.
 
 ### Is it a retopology tool or a remesher?
 No. It repairs the mesh you have and does not rebuild edge flow. On dense scans some triangles will remain. For automatic retopology use a remesher such as Quad Remesher, QRemeshify or Blender's own Quadriflow.
